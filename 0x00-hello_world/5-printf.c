@@ -1,5 +1,5 @@
 #incliude <stdio.h>
-/**
+ /**
  * main - print the string the put function
  *
  * Description: using the main function
