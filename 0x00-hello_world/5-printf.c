@@ -1,11 +1,13 @@
 #incliude <stdio.h>
 /**
- * main-entry point for the program.
+ * main - print the string the put function
  *
- * Return:0 if no erros, return non zero if erros
+ * Description: using the main function
+ * this program prints "programming is like building a multiligual puzzle
+ * Return: 0 
  */
 int main (void)
 {
-	printf("with proper programmar, but  the outcome is a piece of art,\n");
+	printf("with proper grammar, but  the outcome is a piece of art,\n");
 	return (0);
 }
