@@ -1,18 +1,19 @@
 #include "main.h"
-/**
- * print_last_digit - prints the last digit of a number
- * @n: the int to extract the last digit from
- * Return: value of the last digit
- */
-int print_last_digit(int n)
-{
-	int a;
-	if (n < 0)
-		n = -n;
-	a = n % 10;
-	if (a < 0)
-		a = -a;
-	_putchar(a + '0');
-	return (a);
 
+/**
+*print_alphabet_x10 -> prints the lowercase alphabets
+*/
+void print_alphabet_x10(void)
+{
+	int j;
+	int x;
+
+	for (x = 0; x < 10; x++)
+	{
+		for (j = 'a'; j <= 'z'; j++)
+		{
+			_putchar(j);
+		}
+		_putchar('\n');
+	}
 }
