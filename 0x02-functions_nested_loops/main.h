@@ -1,7 +1,5 @@
-#ifndef MAIN_H
-#define MAIN_H
-
-#include<stdio.h>
+#ifndef HOLBERTON_H_CONCLUDED
+#define HOLBERTON_H_CONCLUDED
 
 int _putchar(char c);
 void print_alphabet(void);
@@ -13,8 +11,9 @@ int _abs(int);
 int print_last_digit(int);
 void jack_bauer(void);
 void times_table(void);
-int add(int, int);
+int add(int a, int b);
 void print_to_98(int n);
-void print_times_table(int);
+void print_times_table(int r, int n);
 
-#enddif /* MAIN_H */
+#enddif
+^C
