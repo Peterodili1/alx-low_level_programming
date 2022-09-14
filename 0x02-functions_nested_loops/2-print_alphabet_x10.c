@@ -1,19 +1,18 @@
 #include "main.h"
 /**
- * print_alphabet_x10 - function to print abc 10 times
- *
- * Return: 0
+ * print_last_digit - prints the last digit of a number
+ * @n: the int to extract the last digit from
+ * Return: value of the last digit
  */
-void print_alphabet_x10(void)
+int print_last_digit(int n)
 {
-	char c, i;
+	int a;
+	if (n < 0)
+		n = -n;
+	a = n % 10;
+	if (a < 0)
+		a = -a;
+	_putchar(a + '0');
+	return (a);
 
-	for (i = 0; i <= 9; i++)
-	{
-		for (c = 'a'; c <= 'z'; c++)
-		{
-			_putchar(c);
-		}
-		_putchar('\n');
-	}
 }
