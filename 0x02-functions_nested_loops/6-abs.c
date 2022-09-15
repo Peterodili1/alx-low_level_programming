@@ -5,6 +5,7 @@
 *@n: the int to extract the last digit from
 *Return: value of the last digit
 */
+
 int _abs(int n)
 {
 	if (n < 0)
