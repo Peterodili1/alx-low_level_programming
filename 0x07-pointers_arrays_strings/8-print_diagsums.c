@@ -1,7 +1,7 @@
 #include "main.h"
 #include <stdio.h>
 /**
- * print_diagrams - prints sum of two diagonals of a square.
+ * print_diagsums - prints sum of two diagonals of a square
  * @a: pointer to array.
  * @size: size of array.
  *
@@ -9,7 +9,7 @@
  */
 void print_diagsums(int *a, int size)
 {
-	int i, size1;
+	int i, size;
 	unsigned int sumDiag1, sumDiag2;
 
 	size1 = 0;
