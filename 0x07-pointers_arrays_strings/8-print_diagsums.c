@@ -1,9 +1,9 @@
 #include "main.h"
 #include <stdio.h>
 /**
- * print _diagrams - prints sum of two diagonals of a square.
+ * print_diagrams - prints sum of two diagonals of a square.
  * @a: pointer to array.
- * @size: size of array
+ * @size: size of array.
  *
  * Return: void.
  */
