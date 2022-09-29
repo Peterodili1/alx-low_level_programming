@@ -1,38 +1,57 @@
 #include "main.h"
-/**
- * helperfunction - returns 0 or 1.
- * @num: number being checked.
- * @i: possible factor of the number.
- *
- * Return: 0 if not  prime, 1 if prime.
- */
-int helperfunction(int num, int i)
-{
-	if (i < num)
-	{
-		if (num % i == 0)
-		{
-			return (0);
-		}
-		else
-		{
-			return (helperfunction(num, i + 1));
-		}
 
+/**
+*evaluate_num - recursion loop
+*@num: num
+*@iterator: number to iterate
+*Return: return 1 or 0
+*/
+
+int evaluate_num(int num, int iterator)
+{
+
+	if (iterator == num - 1)
+	{
+		return (1);
 	}
+
+	else if (num % iterator == 0)
+	{
+		return (0);
+	}
+
+	if (num % iterator != 0)
+	{
+		return (evaluate_num(num, iterator + 1));
+	}
+
+	return (0);
+
 }
 
 /**
- * _sqrt_recursion - returns the natural square root of a number.
- * @n: number to find sqrt of.
- *
- * Return: squareroot of n.
- * -1 if n does not have a natural sqrt.
- */
-int _sqrt_recursion(int n)
+*is_prime_number - evaluate prime or not
+*@num: number
+*Return: return 1 prime - return 0 otherwise
+*/
+
+int is_prime_number(int num)
 {
-	if (n < 0)
-		return (-1);
-	else
-		return (helperfunctio(n, 0));
+
+	int iterator;
+
+	iterator = 2;
+
+/* only greater than 2*/
+	if (num < 2)
+	{
+		return (0);
+	}
+
+	if (num == 2)
+	{
+		return (1);
+	}
+
+	return (evaluate_num(num, iterator));
 }
