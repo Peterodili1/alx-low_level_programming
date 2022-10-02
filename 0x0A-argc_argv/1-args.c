@@ -1,8 +1,8 @@
 #include <stdio.h>
 /**
- * main write a program that prints the number of arguments passed into it
+ * main - write a program that prints the number of arguments passed into it
  *
- * @argc: this is the argument count
+ * @args: this is the argument count
  * @argv: this is the argument vector
  *
  * Return: this return to 0
