@@ -5,7 +5,7 @@
  *@argc: this is the argument count
  @argv: this is the argument vector
 *
-*Return 0;
+*Return: 0;
 */
 int main(int argc, char *argv[])
 {
@@ -19,7 +19,7 @@ int main(int argc, char *argv[])
 	}
 		for (index = 1; index < argc; index++)
 		{
-			multiplictin = multiplicatio * atoi (argv[index]);
+			multiplictin = multiplicatio * atoi(argv[index]);
 		}
 		printf("%d\n", multiplication);
 		return (0);
