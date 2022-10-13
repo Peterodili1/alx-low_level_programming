@@ -38,6 +38,7 @@ int main(int argc, char *argv[])
 	if ((*get_op == '/' || *get_op == '%') && (*argv[3] == '0'))
 	{
 		printf("Error\n");
+		exit(100);
 	}
 	res = get_op_func(get_op);
 	ans = res(one, two);
