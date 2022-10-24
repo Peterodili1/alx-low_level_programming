@@ -1,31 +1,26 @@
-#include <stdlib.h>
-#include "main.h"
+#include "lists.h"
+
 /**
-  * _calloc - allocates memory of an array using malloc.
-  * @nmemb: number of elements in array.
-  * @size: size of elements of array.
-  *
-  * Return: NULL is size or nmemb == 0.
-  * NULL if malloc fails.
-  * Pointer to memory allocated if successful.
-  */
-void *_calloc(unsigned int nmemb, unsigned int size)
+ * add_nodeint - adds a node to the beginning of a linked list
+ * @head: pointer to the head of the list
+ * @n: integer to be used as content
+ *
+ * Return: address of the newly added node
+ */
+listint_t *add_nodeint(listint_t **head, const int n)
 {
-	void *p;
-	unsigned int i;
+	listint_t *new_node;
 
-	if (nmemb == 0 || size == 0)
-		return (NULL);
-	p = malloc(nmemb * size);
-	if (p == NULL)
+	new_node = malloc(sizeof(listint_t));
+	if (new_node != NULL)
 	{
+		new_node->n = n;
+		new_node->next = *head;
+	}
+	else
 		return (NULL);
-	}
-
-	for (i = 0; i < (nmemb * size); i++)
-	{
-		*((char *)(p) + i) = 0;
-	}
-
-	return (p);
+	if (*head != NULL)
+		new_node->next = *head;
+	*head = new_node;
+	return (new_node);
 }
